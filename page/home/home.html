@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Roboto?query=ro">
+</head>
+<body>
+    <header class="mobile">
+        <nav class="nav__menu__mobile">
+            <div class="logo__mobile">
+                <img src="../logo/logomobile.png" alt="">
+                <span>Rosie</span>
+            </div>
+            <ul class="nav__mobile">
+                <li><img src="../iconmenu/homeicon.png" alt=""> <a href="home.html">Home</a></li>
+                <li><img src="../iconmenu/abouticon.png" alt=""> <a href="../about/about.html">About</a></li>
+                <li><img src="../iconmenu/packageicon.png" alt=""> <a href="../package/package.html">Package</a></li>
+                <li><img src="../iconmenu/contacticon.png" alt=""> <a href="../contact/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="mobile__content">
+                <div class="logo">
+                    <img src="../logo/logowhite.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="social">
+            <ul>
+                <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+            </ul>
+        </div>
+    </header>
+    <header class="not__mobile">
+        <div class="container large_top">
+            <div class="content__not__mobile">
+                <div class="logo">
+                    <img src="../logo/logoblack.png" alt="">
+                </div>
+                <div class="menu__not__mobile">
+                    <nav>
+                        <ul class="nav__not__mobile">
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="../about/about.html">About</a></li>
+                            <li><a href="../package/package.html">Package</a></li>
+                            <li><a href="../contact/contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="container body">
+            <div class="text">
+                <h3>Love What You Do</h3>
+                <p>love it. Work it. Live it</p>
+            </div>
+        </div>
+       <div class="wraper">
+        <div class="container large">
+            <div class="content__large">
+                <div class="box">
+                    <div class="image">
+                        <img src="../mypicture/IMG_6777.JPG" alt="">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="../mypicture/IMG_9011.JPG" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Love What You Do</h3>
+                        <p>love it. Work it. Live it</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="../mypicture/IMG_0671.JPG" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+    </header>
+</body>
+<script src="https://kit.fontawesome.com/03bca92048.js" crossorigin="anonymous"></script>
+<script>
+    var hamburger = document.querySelector('.hamburger');
+    var nav__menu__mobile = document.querySelector('.nav__menu__mobile');
+    var container = document.querySelector('.container');
+    hamburger.addEventListener("click",()=>{
+        hamburger.classList.toggle('active')
+        container.classList.toggle('active')
+        nav__menu__mobile.classList.toggle('active')
+        
+    });
+</script>
+</html>
