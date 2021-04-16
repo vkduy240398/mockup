@@ -116,7 +116,7 @@
     max-width: 540px;
     margin: 0 auto;
     padding: 15px;
-    background-image: url('../mypicture/IMG_6777.JPG');
+    background-image: url('./mypicture/IMG_6777.JPG');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
